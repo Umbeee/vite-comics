@@ -53,6 +53,7 @@
                         color: black;
                         text-transform: uppercase;
                         font-size: 0.8em;
+                        font-weight: bold;
                     }
                 }
                 li:hover{
