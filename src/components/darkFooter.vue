@@ -11,7 +11,7 @@ export default {
         <div class="container">
             <div class="btn">
 
-                <p>sign-up now!</p>
+                <p>sign-up now! prova</p>
 
             </div>
             <div class="socials">
