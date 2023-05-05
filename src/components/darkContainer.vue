@@ -1,6 +1,12 @@
 <script>
+
+import comicsCards from './comicsCards.vue';
+
 export default {
-       name: "darkContainer"
+       name: "darkContainer",
+       components: {
+        comicsCards
+       }
     }
 
 </script>
@@ -8,11 +14,14 @@ export default {
 <template>
 
     <div class="main">
+
+        <div id="jumbo">
+            <span>current series</span>
+        </div>
+
         <div class="container">
 
-            <span>
-                in questo container realizzerò tutte le cards
-            </span>
+            <comicsCards/>
            
 
         </div>
@@ -25,23 +34,34 @@ export default {
 
     .main{
 
-        background-color: black;
-
-        height: 150px;
-
+        background-color: rgb(28,28,28);
         color: white;
 
         .container{
-
             width: 80%;
             margin: 0 auto;
-
-            display: flex;
-            align-items: center;
-            
-            height: 100%;
         }
 
+
+        #jumbo{
+            background-image: url('../assets/img/jumbotron.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            width: 100%;
+            position: relative;
+
+            span{
+                position: absolute;
+                padding: 15px;
+                color: white;
+                background-color: rgb(2,130,249);
+                text-transform: uppercase;
+                font-weight: bold;
+                bottom: -25px;
+                left: 100px;
+            }
+        }
     }
 
 
